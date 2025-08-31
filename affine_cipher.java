@@ -51,6 +51,8 @@ public class affine_cipher {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+                System.out.print("Affine Cipher ");
+
 
         System.out.print("Enter plaintext: ");
         String plaintext = sc.nextLine();

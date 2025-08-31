@@ -2,19 +2,16 @@ import java.util.*;
 
 public class Keyword_cipher {
 
-    // Generate substitution key from keyword
     public static String generateKey(String keyword) {
         keyword = keyword.toUpperCase();
         StringBuilder key = new StringBuilder();
 
-        // Add unique letters from keyword
         for (char ch : keyword.toCharArray()) {
             if (key.indexOf(String.valueOf(ch)) == -1 && ch >= 'A' && ch <= 'Z') {
                 key.append(ch);
             }
         }
 
-        // Add remaining letters
         for (char ch = 'A'; ch <= 'Z'; ch++) {
             if (key.indexOf(String.valueOf(ch)) == -1) {
                 key.append(ch);
@@ -24,7 +21,6 @@ public class Keyword_cipher {
         return key.toString();
     }
 
-    // Encrypt the plaintext using key
     public static String encrypt(String plaintext, String key) {
         StringBuilder result = new StringBuilder();
 
@@ -46,6 +42,7 @@ public class Keyword_cipher {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Keyword Cipher ");
         // Input keyword
         System.out.print("Enter keyword: ");
         String keyword = sc.nextLine();

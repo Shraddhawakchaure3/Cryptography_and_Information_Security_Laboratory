@@ -18,6 +18,8 @@ public class Ceaser_cipher {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+                System.out.print("Ceaser Cipher ");
+
         System.out.print("Enter text: ");
         String text = sc.nextLine();
         System.out.print("Enter key (number): ");
