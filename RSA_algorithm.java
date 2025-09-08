@@ -6,6 +6,8 @@ import javax.crypto.Cipher;
 import java.util.Base64;
 import java.util.Scanner;
 
+//RSA ALGORITHM
+
 public class RSA_algorithm {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
